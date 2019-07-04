@@ -4,9 +4,10 @@ Feature: User can login to the mailboxer
     In order to send/receive mails.
 
 Background: 
-    Given that the following user exists
-    | email             | password |
-    | johndoe@email.com | abcde123 |
+    Given that I am on the landing page
+    And that the following user exists
+    | name | email             | password |
+    | john doe | johndoe@email.com | abcde123 |
 
 Scenario: User can login
     When I click the login button
