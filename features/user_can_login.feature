@@ -10,8 +10,8 @@ Background:
     | john doe | johndoe@email.com | abcde123 |
 
 Scenario: User can login
-    When I click the login button
-    And I fill in "Email" with 'johndoe@email.com'
-    And I fill in 'Password' with 'abcde123'
-    And I press "Login"
-    Then I should see 'Signed in successfully.'
+    When I click "Login"
+    And I fill in "Email" with "johndoe@email.com"
+    And I fill in "Password" with "abcde123"
+    And I click "Log in"
+    Then I should see "Signed in successfully."
